@@ -1,0 +1,244 @@
+// Global
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+  }
+  
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+.col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .col-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+
+  .section {
+    max-width: 1400px;
+    padding: 96px;
+  }
+
+// Navigation
+.navigation {
+  background-color: #080808;
+  padding: 12px 0;
+}
+
+.nav-logo {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+  
+.navigation .ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+  
+.navigation li {
+  display: inline-block;
+  margin: 0 36px 0 0; 
+  position: relative;
+}
+  
+.navigation a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+// Header
+.splash {
+  background-image: url('https://i.postimg.cc/yx0yL2R0/pexels-cowomen-2041627.jpg');
+  height: 100vh;
+  position: relative;
+  // background-position: center center;
+  // background-size: cover;
+  // background-attachment: fixed;
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: center;
+  }
+  
+.splash-inner {
+  position: absolute;
+  // width: 100%;
+  top: 50%;
+  left: 50%;
+  max-width: 70%;
+  transform: translate(-50%,-50%);
+  margin: auto;
+
+  // justify-content: center;
+  flex: 0 0 33.333%;
+}
+
+
+.page-title {
+  margin: 0px;
+  font-size: 72px;
+  line-height: 1.2;
+  word-spacing: -2px;
+  font-weight: 700;
+  text-shadow: 3px 3px green;
+  color: rgb(237, 233, 233);
+}
+  
+.page-subtitle {
+  margin: 24px 0;
+  font-size: 24px;
+  font-weight: 300;
+  text-shadow: 2px 2px green;
+  color: rgb(237, 233, 233);
+}
+  
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: Inconsolata;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;    
+  border-width: 2px;
+  border-style: solid;
+  background-color: inherit;
+  background-position: 100% 0; 
+  background-size: 300%;
+}
+  
+.btn:hover {
+  background-position: 0 100%; 
+  background-color: #a4b0be;
+  transition: all 1s;
+}
+  
+.btn-one {
+  border-color: #f1c40f;
+  color: #f1c40f;
+  background-image: linear-gradient(90deg, #ecf0f1 50%, transparent 50%);
+}
+
+//Services
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services-inner {
+  margin: auto;
+  max-width: 70%;
+}
+
+.our-services-title {
+  font-size: 48px;
+}   
+
+.our-services-subtitle {
+  font-size: 16px;
+  margin: 0 0 72px 0;
+}
+
+// Portfolio
+.our-portfolio-title {
+  font-size: 48px;
+}
+
+.our-portfolio-subtitle {
+  font-size: 16px;
+  margin: 0 0 72px 0;
+}
+
+.card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+// Footer
+.footer ul {
+    font-size: 0;
+    align-items: flex-end;
+    justify-content: center;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+}
+
+.footer i {
+    font-size: 30px;
+    margin: auto;
+}
+
+.footer li {
+  margin: 10px;
+}
+
+// Media
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
